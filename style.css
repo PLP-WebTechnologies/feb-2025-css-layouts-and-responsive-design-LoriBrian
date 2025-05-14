@@ -1,0 +1,166 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Main content styling */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Content section */
+.content {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  color: #004B87;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  color: #004B87;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.content ul {
+  list-style-type: none;
+}
+
+.content ul li {
+  padding: 5px 0;
+  font-size: 1.2em;
+}
+
+.content ul li strong {
+  color: #D32F2F;
+}
+
+/* Sidebar section */
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  color: #004B87;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sidebar ul, .sidebar ol {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li, .sidebar ol li {
+  padding: 5px 0;
+  font-size: 1.1em;
+}
+
+.sidebar ol {
+  list-style-type: decimal;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .content, .sidebar {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Responsive Design for Small Devices */
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.5em;
+  }
+
+  .content h2 {
+    font-size: 1.2em;
+  }
+
+  .content p, .sidebar h2 {
+    font-size: 1em;
+  }
+}
